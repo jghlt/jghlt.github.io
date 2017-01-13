@@ -28,12 +28,11 @@
     // * usage @include font-bold();
     // * usage @include font-bold(true);
     @mixin font-bold($optimise:false) {
-        @include optimize-font;
-        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
         font-weight:normal;
         font-style:normal;
 
-        @if ($optimise != false) {
+        @if ($optimise = true) {
             @include optimize-font;
         }
     }
@@ -43,12 +42,11 @@
     // * usage @include font-regular();
     // * usage @include font-regular(true);
     @mixin font-regular($optimise:false) {
-        @include optimize-font;
-        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
         font-weight:normal;
         font-style:normal;
 
-        @if ($optimise != false) {
+        @if ($optimise = true) {
             @include optimize-font;
         }
     }
@@ -70,10 +68,13 @@
     }
 
 
+    //
+    // * better to set on html
+    // * http://stackoverflow.com/questions/6905834/should-i-set-the-default-font-size-on-the-body-or-html-element
     html{
         @include font-size(16px);
         @include font-regular;
-        line-height: 1.5;
+        line-height: 1.1;
     }
 
 
@@ -99,16 +100,6 @@
     }
 
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6{
-        line-height: 1.2;
-    }
-
-
     ul,
     ol {
         padding-left:spacing(1);
@@ -129,17 +120,30 @@
 
     //
     // * usage
+    // @include font-size-viewport();
+    @mixin font-size-viewport{
+        @include font-size(24px);
+        letter-spacing: -0.02em;
+        font-weight: 600;
+
+        @include respond-to(small){
+            font-size: 4vw;
+        }
+    }
+
+
+    //
+    // * usage
     // @include size-large();
     @mixin font-size-large{
         @include font-size(24px);
-        line-height: 1;
 
         @include respond-to(small){
             @include font-size(40px);
         }
 
         @include respond-to(medium) {
-            @include font-size(60px);
+            @include font-size(4);
         }
     }
 

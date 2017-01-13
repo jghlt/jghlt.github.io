@@ -50,7 +50,7 @@
             base          : $color-brand,
             white         : $color-base-white,
             black         : $color-base-black,
-            grey          : $color-base-grey
+            grey          : lighten($color-base-black, 50%)
         )
     );
 

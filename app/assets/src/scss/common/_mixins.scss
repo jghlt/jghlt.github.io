@@ -62,13 +62,13 @@
 
     //
     // * usage @include position(relative);
-    // * usage @include position(absolute, $top:0, $left:0);
-    @mixin position($position:relative, $top: auto, $right: auto, $bottom: auto, $left: auto) {
+    // * usage @include position(absolute, $t:0, $l:0);
+    @mixin position($position:relative, $t: auto, $r: auto, $b: auto, $l: auto) {
         position: $position;
-        top: $top;
-        right: $right;
-        bottom: $bottom;
-        left: $left;
+        top: $t;
+        right: $r;
+        bottom: $b;
+        left: $l;
     }
 
 

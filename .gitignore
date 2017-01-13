@@ -47,7 +47,7 @@ working/*
 
 # Ignore some src & build files
 ######################
-app/assets/src/js/bundle.js
-app/assets/src/css/*
-app/**/fonts/*
-app/assets/dist/
+# app/assets/src/js/bundle.js
+# app/assets/src/css/*
+# app/**/fonts/*
+# app/assets/dist/

@@ -20,7 +20,7 @@ class App {
     constructor(scope){
 
         // properties
-        this.debug = true;
+        this.debug = false;
 
         // debug?
         if (!this.debug) {

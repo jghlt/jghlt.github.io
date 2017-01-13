@@ -1,8 +1,8 @@
 {
-  "name": "bp",
+  "name": "jghlt-github-io",
   "version": "0.0.1",
   "description": "",
-  "author": "",
+  "author": "jghlt",
   "private": true,
   "license": "",
   "repository": {
@@ -19,7 +19,6 @@
     "browserify-shim": "^3.8.12",
     "cssnano": "^3.7.0",
     "del": "^2.2.1",
-    "dploy": "^1.2.0",
     "event-stream": "^3.3.4",
     "git-rev-sync": "^1.6.0",
     "gulp": "^3.9.1",
