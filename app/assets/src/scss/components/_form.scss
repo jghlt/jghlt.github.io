@@ -1,0 +1,121 @@
+/*
+------------------------------------------------------------------
+
+    - _forms.scss / component
+
+------------------------------------------------------------------*/
+
+    $module: '.form';
+    #{$module}{
+        max-width: 100%;
+
+
+        &__row{
+            display: block;
+            padding-bottom:spacing(1);
+        }
+
+
+        &__columns{
+
+            @include respond-to(medium){
+                @include grid-make-row();
+            }
+        }
+
+
+        &__column{
+
+            @include respond-to(medium){
+                @include grid-make-column(6);
+            }
+        }
+
+
+        &__group{
+            padding-bottom:spacing(1);
+            position: relative;
+        }
+
+
+        &__group--columns{
+
+            @include respond-to(medium){
+                @include grid-make-row($gutter:3px);
+            }
+        }
+
+
+        &__group--column{
+
+            @include respond-to(medium){
+                @include grid-make-column(6, $gutter:3px);
+            }
+        }
+
+
+        &__label{
+            padding-bottom:spacing(0.5);
+            @include font-size(14px);
+            display: none;
+
+            .no-placeholder & {
+                display: block;
+            }
+
+            @include respond-to(small){
+                @include font-size(18px);
+            }
+        }
+
+
+        &__error{
+            @include font-size(13px);
+            @include align(left);
+            padding: 5px 0 0 5px;
+            display: block;
+            font-size: 13px;
+            color:palette(brand, error);
+        }
+
+
+        &__select__wrapper{
+            position:relative;
+            overflow:hidden;
+            width:100%;
+
+            select{
+                width:110%;
+            }
+
+            &:after{
+                @include show-pseudo;
+                position:absolute;
+                right:10px;
+                top:15px;
+
+                width: 0;
+                height: 0;
+                border-left: 8px solid transparent;
+                border-right: 8px solid transparent;
+                border-top: 8px solid palette(grey);
+
+                @include respond-to(small){
+                    right:15px;
+                    top:20px;
+                }
+
+                @include respond-to(medium){
+                    right:20px;
+                    top:25px;
+                }
+            }
+        }
+
+        select{
+            @include remove-webkit-styles;
+            @include is-clickable;
+            background:palette(white);
+            border-radius:0;
+        }
+    }

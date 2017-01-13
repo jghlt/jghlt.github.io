@@ -1,0 +1,22 @@
+{
+    "camelcase": true,
+    "curly": true,
+    "eqeqeq": true,
+    "strict": true,
+    "evil": true,
+    "indent": 4,
+    "undef": true,
+    "white": true,
+    "browser": true,
+    "quotmark": "single",
+    "trailing": true,
+    "globals": {
+        "jQuery": true,
+        "console": true,
+        "require":true,
+        "alert": true,
+        "module": true,
+        "_": true,
+        "Modernizr": true
+    }
+}

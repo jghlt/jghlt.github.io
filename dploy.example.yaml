@@ -1,0 +1,12 @@
+staging:
+    host: ""
+    user: ""
+    pass: ""
+    check: true
+    secure: true
+    path:
+        remote: "/"
+    exclude: ["gulp/**", ".editorconfig", ".gitignore", ".jshintrc", "dploy.example.yaml", "gulpfile.js", "package.json", "readme.md", "README.md"]
+    include:
+        "index.html" : "index.html"
+        "app/assets/dist/**" : "app/assets/dist/"

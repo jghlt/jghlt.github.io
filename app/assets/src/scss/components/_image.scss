@@ -1,0 +1,22 @@
+/*
+------------------------------------------------------------------
+
+    - _image.scss / component
+
+------------------------------------------------------------------*/
+
+
+    $module: '.image';
+    #{$module}{
+        width:100%;
+
+        &__background{
+            @include background-fill;
+            padding-bottom: 59%;
+            display: block;
+        }
+
+        &__image{
+            @include hide-image();
+        }
+    }
