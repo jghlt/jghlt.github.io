@@ -1,2 +1,2 @@
-#bp
-Simple structured starting point for front end builds.
+#jghlt.github.io
+Hello world.
