@@ -7,7 +7,7 @@
   "license": "",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/jghlt/jghlt.github.io"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.6",
