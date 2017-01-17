@@ -1,19 +1,20 @@
 {
-  "name": "jghlt-github-io",
+  "name": "jghlt.github.io",
   "version": "0.0.1",
-  "description": "",
   "author": "jghlt",
   "private": true,
-  "license": "",
+  "description": "internet",
+  "main": "index.html",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jghlt/jghlt.github.io"
+    "url": ""
   },
   "devDependencies": {
     "autoprefixer": "^6.3.6",
     "babel": "^6.5.2",
     "babel-preset-es2015": "^6.14.0",
     "babelify": "^7.3.0",
+    "blazy": "^1.6.2",
     "browser-sync": "^2.18.2",
     "browserify": "^13.0.0",
     "browserify-shim": "^3.8.12",
