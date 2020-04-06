@@ -23,7 +23,7 @@
     "event-stream": "^3.3.4",
     "git-rev-sync": "^1.6.0",
     "gulp": "^4.0.2",
-    "gulp-clean": "*",
+    "gulp-clean": "^0.4.0",
     "gulp-concat": "^2.6.0",
     "gulp-copy": "^4.0.1",
     "gulp-imagemin": "^6.0.0",
