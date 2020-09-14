@@ -53,5 +53,8 @@
   },
   "browser": {
     "jquery": "./node_modules/jquery/dist/jquery.js"
+  },
+  "dependencies": {
+    "bl": "^4.0.3"
   }
 }
